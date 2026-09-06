@@ -9,7 +9,7 @@
 <meta property="og:title" content="Avery Carter — Premium Health &amp; Wellness">
 <meta property="og:description" content="Doctor-curated products for strength, heart, mind, and healthy aging.">
 <meta property="og:url" content="https://YOUR-LIVE-URL">
-<meta property="og:image" content="https://z-cdn-media.chatglm.cn/files/f5b51f0f-82ec-405e-a568-54739fc7737c.png?auth_key=1888720902-7487144070c84353a1b26b47d92f644c-0-c33a698f32c602d0e9038c1698852d24">
+<meta property="og:image" https://averycarter85.github.io/averycarter.github.io/hero-poster.png.png
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23263521'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='%23F1EDDE' text-anchor='middle'%3EAC%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -403,6 +403,17 @@ body.menu-open .mm-nav a{opacity:1;transform:none}
   transition:opacity .7s ease,transform .9s var(--ease),filter .9s ease;
   transition-delay:calc(var(--i)*95ms)}
 [data-blur-text].in .w{opacity:1;transform:none;filter:blur(0)}
+/* Closing story gallery */
+.story-pair{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:clamp(44px,6vw,72px)}
+.story-img{position:relative;margin:0;border-radius:26px;overflow:hidden;aspect-ratio:4/3;
+  box-shadow:0 18px 50px -26px rgba(35,38,31,.35)}
+.story-img img{width:100%;height:100%;object-fit:cover;object-position:50% 45%;transition:transform .9s var(--ease)}
+.story-img:hover img{transform:scale(1.04)}
+.story-cap{position:absolute;left:14px;bottom:14px;padding:8px 14px;border-radius:999px;
+  font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#F1EDE0;
+  background:rgba(12,18,9,.55);border:1px solid rgba(244,241,230,.25);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+@media(max-width:700px){.story-pair{grid-template-columns:1fr}}
 
 @media(max-width:1104px){.grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:960px){
@@ -659,6 +670,25 @@ body.menu-open .mm-nav a{opacity:1;transform:none}
         </div>
       </div>
     </section>
+    <section class="section" id="story">
+      <div class="wrap">
+        <header class="sec-head" style="margin-left:auto;margin-right:auto;text-align:center;max-width:640px">
+          <p class="eyebrow" data-reveal>The Avery Carter way</p>
+          <h2 class="sec-title" data-blur-text>Wellness, lived at home.</h2>
+          <p class="sec-sub" data-reveal style="--d:160ms">Our whole philosophy in two frames — comfort, calm, and independence that lasts.</p>
+        </header>
+        <div class="story-pair">
+          <figure class="story-img" data-reveal>
+            <img src="hero-poster.png.png" alt="A relaxed morning at home" loading="lazy" decoding="async">
+            <figcaption class="story-cap">Scene one · Morning light</figcaption>
+          </figure>
+          <figure class="story-img" data-reveal style="--d:160ms">
+            <img src="scene2-poster.png.png" alt="Quiet, comfortable living" loading="lazy" decoding="async">
+            <figcaption class="story-cap">Scene two · The quiet hours</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
 
     <footer class="footer">
       <div class="wrap">
@@ -724,7 +754,7 @@ const VIDEO_CONFIG = {
   hero: {
     src: "hero.mp4.mp4",
     mobileSrc: "",
-    poster: "hero-poster.png.png",
+    poster: "",
     objectPosition: "70% 45%",
   },
   scene2: {
