@@ -266,7 +266,9 @@ body.menu-open .mm-nav a{opacity:1;transform:none}
   transition:transform .5s var(--ease),box-shadow .5s}
 .feat-main:hover{transform:translateY(-6px);box-shadow:0 34px 70px -30px rgba(35,38,31,.45),inset 0 1px 0 rgba(255,255,255,.7)}
 .feat-art{position:relative;background:var(--sand);overflow:hidden;min-height:320px}
-.feat-art svg,.feat-art img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+.feat-art svg{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+.feat-sm-art svg{width:100%;height:100%;transition:transform .8s var(--ease)}
+.feat-art img,.feat-sm-art img{width:100%;height:100%;object-fit:contain;background:var(--sand);transition:transform .9s var(--ease)}
 .feat-main:hover .feat-art svg,.feat-main:hover .feat-art img{transform:scale(1.045)}
 .feat-body{padding:clamp(26px,3vw,42px);display:flex;flex-direction:column;align-items:flex-start}
 .feat-name{font-family:var(--serif);font-size:clamp(1.5rem,2.4vw,2rem);line-height:1.1;margin-top:12px}
@@ -280,7 +282,6 @@ body.menu-open .mm-nav a{opacity:1;transform:none}
   transition:transform .5s var(--ease),box-shadow .5s}
 .feat-sm:hover{transform:translateY(-5px);box-shadow:0 28px 56px -26px rgba(35,38,31,.42),inset 0 1px 0 rgba(255,255,255,.7)}
 .feat-sm-art{position:relative;aspect-ratio:1;border-radius:16px;overflow:hidden;background:var(--sand)}
-.feat-sm-art svg,.feat-sm-art img{width:100%;height:100%;transition:transform .8s var(--ease)}
 .feat-sm:hover .feat-sm-art svg,.feat-sm:hover .feat-sm-art img{transform:scale(1.05)}
 .feat-sm-body{display:flex;flex-direction:column;align-items:flex-start;min-width:0}
 .feat-sm-body h3{font-family:var(--serif);font-size:1.3rem;line-height:1.12;margin-top:8px}
@@ -307,7 +308,8 @@ body.menu-open .mm-nav a{opacity:1;transform:none}
   background:rgba(255,255,255,.32);transform:skewX(-16deg);pointer-events:none;transition:left .8s var(--ease)}
 .card:hover::after{left:130%}
 .card-art{position:relative;aspect-ratio:1;background:var(--sand);overflow:hidden}
-.card-art svg,.card-art img{width:100%;height:100%;object-fit:cover;transition:transform .85s var(--ease)}
+.card-art svg{width:100%;height:100%;object-fit:cover;transition:transform .85s var(--ease)}
+.card-art img{width:100%;height:100%;object-fit:contain;padding:6%;background:var(--sand);transition:transform .85s var(--ease)}
 .card:hover .card-art svg,.card:hover .card-art img{transform:scale(1.05)}
 .badge{position:absolute;top:12px;left:12px;z-index:2;padding:5px 11px;border-radius:999px;
   font-size:9.5px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
